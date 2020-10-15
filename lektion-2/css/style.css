@@ -1,0 +1,18 @@
+/* 
+    . = class                       kan användas flera gånger på en och samma sida
+    # = id                          får bara förekomma en gång per sida
+    div = alla div element 
+*/
+
+
+
+.bg-secondary {
+    background: lightgray;
+}
+
+.bg-primary {
+    background: lightblue !important;
+}
+
+
+
