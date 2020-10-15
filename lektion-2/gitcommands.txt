@@ -1,0 +1,18 @@
+Om du hämtar hem ett befintligt projekt från github gör följande:
+git clone https://github.com/datanorden-hans/feu20-htmlcss.git
+
+
+Gör detta först när du skapar ett nytt projekt:
+git init
+git remote add origin https://urlen.git
+
+
+För varje fil och för varje sparning du gör så gör detta:
+git add .
+git commit -m "commit meddelande"
+
+
+När du är redo för att skicka upp filerna till github gör följande:
+git pull origin master
+git push origin master
+
