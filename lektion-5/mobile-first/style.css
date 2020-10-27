@@ -4,3 +4,17 @@
     font-size: 40px;
 }
 
+@media (min-width: 480px) {
+    .div-class {
+      color: orange;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .div-class {
+      color: red;
+      font-size: 12px;
+    }
+}
