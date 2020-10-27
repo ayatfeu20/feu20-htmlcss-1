@@ -1,0 +1,23 @@
+/* access via elementet */
+div {
+    color: yellow;
+}
+
+/* access via id */
+#div-id {
+    color: green;
+}
+
+/* access via class */
+.div-class {
+    color: red;
+}
+
+
+.div-class span {
+    color: blue;
+}
+.div-class .span-class {
+    color: orange;
+}
+
