@@ -15,6 +15,7 @@ html, body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    color: #626262;
 }
 
 .border {
@@ -31,6 +32,9 @@ a:hover {
     color: #25E6C8;
 }
 
+
+
+
 .bg-dark {
    background: #333333;
    color: #ffffff; 
@@ -40,6 +44,37 @@ a:hover {
     background: #f7f7f7;
     color: #333333; 
 }
+
+.bg-gray {
+    background: #DEDEDE;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.btn-greenish {
+    color: #fff;
+    background-color: #25E6C8;
+    font-weight: bold;
+}
+
+.btn-greenish:hover {
+    cursor: pointer;
+    background-color: #2BAAEC;
+}
+
+
+
+
 
 .collapse:not(.show) {
     display: none;
@@ -126,6 +161,48 @@ a:hover {
     padding: 0;
     text-decoration: none;
 }
+
+
+#showcase .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+}
+
+#showcase .container img {
+    height: 500px;
+    margin-top: 1rem;
+}
+
+#showcase .container .content-box {
+    align-self: center;
+    color: #363636;
+    font-weight: 300;
+}
+
+.content-box .content h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.content-box .content p {
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 768px) {
