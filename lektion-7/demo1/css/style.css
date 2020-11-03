@@ -1,0 +1,68 @@
+/* mobile first */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+@import url(colors.css);
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+#appointment {
+    font-family: 'Roboto', sans-serif;
+}
+
+.overlay {
+    opacity: 80%;
+}
+
+.center-content {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .center-content {
+        display:flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1440px;
+    }
+
+}
