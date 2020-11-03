@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+@import url(colors.css);
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "topbar"
+                            "navbar";
+
+}
+#topbar {
+    grid-area: topbar;
+    text-align: center;
+}
+#navbar {
+    grid-area: navbar;
+    text-align: center;
+}
+#showcase {
+    grid-area: showcase;
+    text-align: center;
+}
+#about {
+    grid-area: about;
+    text-align: center;
+}
+#services {
+    grid-area: services;
+    text-align: center;
+}
+#appointment {
+    grid-area: appointment;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:    "header"
+                            "showcase"
+                            "about"
+                            "services"
+                            "appointment"
+                            "footer";
+}
+
+.overlay {
+    opacity: 80%;
+}
+
+.content-flex {
+    padding: 1.5rem 0 1.5rem 0;
+    display: block;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .content p {
+        text-align: left;
+    }
+
+    .content-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    .grid {
+        display: grid;
+    
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:    "header header header"
+                                "showcase about services"
+                                "appointment appointment appointment"
+                                "footer footer footer";
+    }  
+}
