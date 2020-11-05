@@ -2,8 +2,13 @@
     position: static;
     position: relative;
     position: absolute;
+    position: fixed;
+    position: sticky;
+    
     z-index: 0;
 
-    top: 50px;
-    left: 50px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
