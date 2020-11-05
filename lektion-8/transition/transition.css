@@ -1,0 +1,31 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+.btn-coral {
+    background-color: lightcoral;
+    border-color: lightcoral;
+    color:#ffffff;
+    box-shadow: 6px 8px 10px #888888;
+}
+.btn-coral:hover {
+    box-shadow: 3px 1px 5px #888888;
+}
+
+.btn-blue {
+    background-color: lightsteelblue;
+    border-color: lightsteelblue;
+    color:#333333;
+    box-shadow: 6px 8px 10px #888888;
+}
+.btn-blue:hover {
+    box-shadow: 3px 1px 5px #888888;
+}
