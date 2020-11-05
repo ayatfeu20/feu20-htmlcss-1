@@ -19,14 +19,76 @@ html, body {
     height: 1500px;
 }
 
+a {
+    text-decoration: none;
+    color:lightseagreen;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+a:hover {
+    color:rgb(14, 87, 83);
+}
+
 #topnavbar {
     padding: 1rem 0;
     border-bottom: 1px solid lightseagreen;
 }
-#topnavbar .container {
+#topnavbar > .container {
     display: flex;
     justify-content: space-between;
 }
-#topnavbar #openinghours {
+#topnavbar > .container > #openinghours {
     margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+#topnavbar > .container > #openinghours > i {
+    margin-right: 0.8rem;
+    font-size: 1.3em;
+    padding-top: 0.15rem;
+}
+#topnavbar > .container > #socialmedia {
+    margin-right: 2rem;
+}
+#topnavbar > .container > #socialmedia > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 1.3em;
+}
+#topnavbar > .container > #socialmedia > ul > li {
+    margin-left: 2rem;
+}
+#topnavbar > .container > #socialmedia > ul > li a {
+    color :lightseagreen;
+}
+#topnavbar > .container > #socialmedia > ul > li a:hover {
+    color :rgb(14, 87, 83);
+}
+
+
+#navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 1.5rem 0;
+}
+#navbar > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar > .container > .logo {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#navbar > .container > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-right: 2rem;
+}
+#navbar > .container > ul > li {
+    margin-left: 1rem;
 }
