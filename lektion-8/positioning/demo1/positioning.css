@@ -1,0 +1,9 @@
+#child {
+    position: static;
+    position: relative;
+    position: absolute;
+    z-index: 0;
+
+    top: 50px;
+    left: 50px;
+}
