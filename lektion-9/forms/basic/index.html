@@ -6,8 +6,17 @@
     <title>Document</title>
 
     <style>
-        input {
+        form {
+            margin-bottom: 10rem;
+        }
+        input, button, textarea, select {
             display: block;
+            margin: 0.5rem;
+        }
+
+        textarea {
+            resize: none;
+            font-family: sans-serif;
         }
     </style>
 
@@ -15,6 +24,59 @@
 <body>   
     <form action="sida2.html" method="POST">
         
+        <input type="hidden" id="userId" name="userId" Value="123">
+        <input type="text" id="name" name="name" Value="Hans">
+        <input type="email" id="email" name="email" Value="h@h">
+        <input type="password" id="password" name="password" Value="BytMig123">
+        
+        <input type="number">
+        <input type="range">
+        <input type="tel" id="tel" name="tel" value="08-12312" pattern="[0-9]{2,3}-[0-9]{3}[0-9]{2}">
+
+        <input type="date" id="date" name="date" value="2020-11-10">
+        <input type="datetime-local">
+        <input type="time">
+        <input type="month">
+        <input type="week">
+
+        <input type="search" id="search" name="search" value="lampor">
+        <input type="color">
+        <input type="file">
+        <input type="image" src="">
+        <input type="url" id="url" name="url" value="http://domain.com">
+
+        <input type="checkbox" id="checkbox1" name="checkbox1">
+        <input type="checkbox" id="checkbox2" name="checkbox2" checked>
+
+        <input type="radio" id="r1" name="radiobuttons">
+        <input type="radio" id="r2" name="radiobuttons" checked>
+        <input type="radio" id="r3" name="radiobuttons">
+
+        <input type="button" value="skicka" disabled>
+        <input type="submit">
+        <input type="reset">
+
+        <button>skicka</button>
+
+        <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+
+        <select>
+            <option value="1">Alternativ 1</option>
+            <option value="2" selected>Alternativ 2</option>
+            <option value="3">Alternativ 3</option>
+        </select>
+        <select>
+            <optgroup label="Swedish Cars">
+                <option value="1">Value 1</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="1">Value 1</option>
+            </optgroup>
+        </select>
+
+        <label for="name3">Name: </label>
+        <input type="text" id="name3" name="name2" Value="Hans">
+
 
     </form>
 </body>
