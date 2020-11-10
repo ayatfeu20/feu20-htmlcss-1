@@ -1,0 +1,58 @@
+METHODS         CRUD
+------------------------------------------------
+POST            Create
+GET             Read
+PUT             Update
+PATCH           Update
+DELETE          Delete
+------------------------------------------------
+
+GET
+------
+Används när vi vill hämta information från olika ställen (url). 
+Används av sökmotorer och dylikt men även i formulär. Vi kan även
+skicka data med GET men detta bör undvikas. GET är som att skicka vykort. 
+Dvs. Alla kan se vad du har skrivit på ditt vykort. 
+I skickar alltså data i klartext som visas i urlen:
+
+ex. http://localhost/validate.html?email=h@h.com&password=BytMig123
+
+
+POST
+-------
+Används när vi vill skicka känslig information som att skapa en användare.
+Vi kan även använda POST för att hämta information. Men kräver då att vi
+packar upp informationen på något sätt. POST är som att skicka ditt vykort
+i ett kuvert istället. Man ser bara mottagaren men inte själva innehållet.
+För att se innehållet måste man öppna upp kuvertet.
+
+ex. http://localhost/validate.html
+BODY: { "email": "h@h.com", "password": "BytMig123" }
+
+
+PUT
+------
+Används när vi vill ersätta ett helt objekt (information). Detta görs genom
+att man skickar något form av id som en "GET" och skickar resten av informationen
+som en "POST"
+
+ex. http://localhost/update.html?id=123
+BODY: { "id": 123, "email": "h@h.com", "password": "BytMig123!" }
+
+
+PATCH
+-------
+Används när vi vill uppdatera hela eller delar av ett objekt (information). 
+Detta görs genom att man skickar något form av id som en "GET" och 
+skickar resten av informationen som en "POST"
+
+ex. http://localhost/update.html?id=123
+BODY: { "password": "BytMig123!" }
+
+
+DELETE
+-------
+Används när vi vill ta bort ett objekt (information). 
+Detta görs genom att man skickar något form av id som en "GET"
+
+ex. http://localhost/delete.html?id=123
