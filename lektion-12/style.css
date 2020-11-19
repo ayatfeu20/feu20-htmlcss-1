@@ -1,0 +1,46 @@
+/* standard styling */
+.vh-100 {
+    height: 100vh;
+}
+
+/* colors (text colors, background colors, button colors)*/
+.bg-orange {
+    background-color: rgb(255, 212, 133);
+}
+
+.btn-orange {
+    color: #fff;
+    background-color: rgb(255, 184, 53);
+    border-color: rgb(255, 184, 53);
+}
+  
+.btn-orange:hover {
+    color: #fff;
+    background-color: rgb(196, 141, 40);
+    border-color:rgb(196, 141, 40);
+}
+  
+.btn-orange:focus, .btn-orange.focus {
+    color: #fff;
+    background-color: rgb(196, 141, 40);
+    border-color:rgb(196, 141, 40);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+  
+.btn-orange.disabled, .btn-orange:disabled {
+    color: #fff;
+    background-color: rgb(255, 184, 53);
+    border-color: rgb(255, 184, 53);
+}
+  
+.btn-orange:not(:disabled):not(.disabled):active, .btn-orange:not(:disabled):not(.disabled).active,
+.show > .btn-orange.dropdown-toggle {
+    color: #fff;
+    background-color: rgb(196, 141, 40);
+    border-color: rgb(196, 141, 40);
+}
+  
+.btn-orange:not(:disabled):not(.disabled):active:focus, .btn-orange:not(:disabled):not(.disabled).active:focus,
+.show > .btn-orange.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
